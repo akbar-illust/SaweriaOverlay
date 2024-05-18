@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overlay-01</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -13,18 +12,37 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .shadow-overlay {
+        .text{
+            color: white;
+        }
+
+        .bg-ov {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: rgb(84, 13, 110);
+            background: linear-gradient(90deg, rgba(84, 13, 110, 1) 0%, rgba(127, 7, 153, 1) 35%, rgba(134, 19, 136, 1) 100%);
+            border-radius: 20px;
+            border: solid 2px white;
+        }
+
+        .shadow-ov {
             -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
         }
     </style>
 </head>
 
 <body>
-    <div class="shadow-overlay bg-gradient-to-r from-violet-500 to-fuchsia-500 grid justify-center rounded-xl text-center py-3" style="width: 50rem;">
-        <h1 class="text-2xl">{donator} nyawer kamu {amount} cuy</h1>
-        <p class="text-xl">{message}</p>
+    <div class="shadow-ov bg-ov" style="width: 50rem;">
+        <h1 class="text">
+            <span class="donator">{donator} </span>
+            nyawer kamu
+            <span class="amount">{amount}</span>
+            euyy
+        </h1>
+        <p class="message text">{message}</p>
     </div>
 </body>
 
