@@ -12,6 +12,12 @@
             font-family: "Poppins", sans-serif;
         }
 
+        .container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
         .text{
             color: white;
         }
@@ -35,14 +41,16 @@
 </head>
 
 <body>
-    <div class="shadow-ov bg-ov" style="width: 50rem;">
-        <h1 class="text">
-            <span class="donator">{donator} </span>
-            nyawer kamu
-            <span class="amount">{amount}</span>
-            euyy
-        </h1>
-        <p class="message text">{message}</p>
+    <div class="container">
+        <div class="shadow-ov bg-ov" style="width: 50rem;">
+            <h1 class="text">
+                <span class="donator">{donator} </span>
+                menyawer kamu
+                <span class="amount">{amount}</span>
+                euyy
+            </h1>
+            <p class="message text">{message}</p>
+        </div
     </div>
 </body>
 
